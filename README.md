@@ -43,3 +43,9 @@ At the end of the day, the technologies implemented in this project are React, R
 ## Notes
 
 - The `--legacy-peer-deps `flag was introduced with v7 as a way to bypass peerDependency auto-installation; it tells NPM to ignore peer deps and proceed with the installation anyway. <b>This is how things used to be with NPM v4 thru v6.</b>
+
+
+
+## Project steps
+
+- Routes from rrd and Box from mui integrating in App.js. Added `Navbar` and `Footer` components in the components folder and added `Home` and `ExercisesDetail` components in the pages since these contain more components inside them. Wrap `App` with `BrowserRouter` in index.js.
