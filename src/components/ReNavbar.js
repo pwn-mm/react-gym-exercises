@@ -4,7 +4,7 @@ import { Stack } from "@mui/material";
 
 import logo from "../assets/images/Logo.png";
 
-const Navbar = () => {
+const ReNavbar = () => {
   return (
     <Stack
       direction="row"
@@ -45,4 +45,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default ReNavbar;

@@ -49,3 +49,5 @@ At the end of the day, the technologies implemented in this project are React, R
 ## Project steps
 
 - Routes from rrd and Box from mui integrating in App.js. Added `Navbar` and `Footer` components in the components folder and added `Home` and `ExercisesDetail` components in the pages since these contain more components inside them. Wrap `App` with `BrowserRouter` in index.js.
+
+- Navbar Component => logo, Exercises routes added / inline styles integrated 
