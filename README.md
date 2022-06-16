@@ -4,7 +4,7 @@ Modern React 18 Fitness Exercises App.
 
 ## Project Status
 
-Developing.
+Developing ... ... ...
 
 ## Project Screen Shot(s)
 
