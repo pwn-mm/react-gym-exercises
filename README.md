@@ -44,6 +44,8 @@ At the end of the day, the technologies implemented in this project are React, R
 
 - The `--legacy-peer-deps `flag was introduced with v7 as a way to bypass peerDependency auto-installation; it tells NPM to ignore peer deps and proceed with the installation anyway. <b>This is how things used to be with NPM v4 thru v6.</b>
 
+- In SearchExercises, since you've used `absolute` in the `button`, you must include `right` property to make it center.
+
 ## Project steps
 
 - Routes from rrd and Box from mui integrating in App.js. Added `Navbar` and `Footer` components in the components folder and added `Home` and `ExercisesDetail` components in the pages since these contain more components inside them. Wrap `App` with `BrowserRouter` in index.js.
@@ -53,3 +55,5 @@ At the end of the day, the technologies implemented in this project are React, R
 - Home Page => we will be using many other components inside `Home`, implemented `HeroBanner`, `SearchExercises`, and `Exercises` components.
 
 - HeroBanner => Integrate `typography`, `button` and `banner image` alongside inline styles.
+
+- SearchExercises => Integrate `textField`, `typography` and `button`.
