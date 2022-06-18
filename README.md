@@ -46,14 +46,30 @@ At the end of the day, the technologies implemented in this project are React, R
 
 - In SearchExercises, since you've used `absolute` in the `button`, you must include `right` property to make it center.
 
+- \*\*\* Need `REACT_APP` Prefix in .env File
+
+## Resources 
+
+- https://stackoverflow.com/questions/70100830/why-do-we-need-react-app-prefix-in-env-file-for-react-development
+
 ## Project steps
 
 - Routes from rrd and Box from mui integrating in App.js. Added `Navbar` and `Footer` components in the components folder and added `Home` and `ExercisesDetail` components in the pages since these contain more components inside them. Wrap `App` with `BrowserRouter` in index.js.
+<br/>
 
-- Navbar Component => logo, Exercises routes added / inline styles integrated.
+- Navbar Component => Logo, Exercises routes added | inline styles integrated.
+<br/>
 
-- Home Page => we will be using many other components inside `Home`, implemented `HeroBanner`, `SearchExercises`, and `Exercises` components.
+- Home Page => We will be using many other components inside `Home`, implemented `HeroBanner`, `SearchExercises`, and `Exercises` components.
+<br/>
 
 - HeroBanner => Integrate `typography`, `button` and `banner image` alongside inline styles.
+<br/>
 
-- SearchExercises => Integrate `textField`, `typography` and `button`.
+- SearchExercises => Integrate `textField`, `typography` and `button` | async function handleSearch() => create FetchData() in `utils` folder.
+<br/>
+
+- FetchData() => Parameters (url, options), fetch the response, convert the response into json | subscribe ExercisesDB API from RapidAPI and store the key in `.env`.
+<br/>
+
+- SearchExercises => Call fetchData() and exercisesOptions, and then pass the parameter `url` in the former. Then continue implementing `handleSearch()`
