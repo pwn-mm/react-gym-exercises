@@ -54,22 +54,22 @@ At the end of the day, the technologies implemented in this project are React, R
 
 ## Project steps
 
-- Routes from rrd and Box from mui integrating in App.js. Added `Navbar` and `Footer` components in the components folder and added `Home` and `ExercisesDetail` components in the pages since these contain more components inside them. Wrap `App` with `BrowserRouter` in index.js.
+- Routes from rrd and Box from mui integrate in App.js. Added `Navbar` and `Footer` components in the components folder and added `Home` and `ExercisesDetail` components in the pages since these contain more components inside them. Wrap `App` with `BrowserRouter` in index.js.
 <br/>
 
-- Navbar Component => Logo, Exercises routes added | inline styles integrated.
+- Navbar Component => Logo, Exercises routes added | Inline css styles integrated.
 <br/>
 
-- Home Page => We will be using many other components inside `Home`, implemented `HeroBanner`, `SearchExercises`, and `Exercises` components.
+- Home Page => We will be using many other components inside `Home`| Implemented `HeroBanner`, `SearchExercises`, and `Exercises` components.
 <br/>
 
-- HeroBanner => Integrate `typography`, `button` and `banner image` alongside inline styles.
+- HeroBanner => Integrated `typography`, `button` and `banner image` alongside inline css styles.
 <br/>
 
-- SearchExercises => Integrate `textField`, `typography` and `button` | async function handleSearch() => create FetchData() in `utils` folder.
+- SearchExercises => Integrated `textField`, `typography` and `button` | async function handleSearch() => created FetchData() in the `utils` folder.
 <br/>
 
-- FetchData() => Parameters (url, options), fetch the response, convert the response into json | subscribe ExercisesDB API from RapidAPI and store the key in `.env`.
+- FetchData() => Parameters (url, options), fetched the response, converted the response into json | subscribe ExercisesDB API from RapidAPI and stored the key in `.env`.
 <br/>
 
-- SearchExercises => Call fetchData() and exercisesOptions, and then pass the parameter `url` in the former. Then continue implementing `handleSearch()`
+- SearchExercises => Called fetchData() and exercisesOptions, and then passed the parameter `url` in the former. Then continued implementing `handleSearch()`. After that, declared new useEffect to fetch `categories` as soon as the page reloads.

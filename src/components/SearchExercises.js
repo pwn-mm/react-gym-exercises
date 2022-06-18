@@ -7,6 +7,9 @@ const SearchExercises = () => {
   const [search, setSearch] = useState("");
   const [exercises, setExercises] = useState([]);
 
+  // Only calls when the page reloads
+  useEffect(() => {}, []);
+
   const handleSearch = async () => {
     if (search) {
       const exercisesData = await fetchData(
