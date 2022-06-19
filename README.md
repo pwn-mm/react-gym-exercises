@@ -73,3 +73,7 @@ At the end of the day, the technologies implemented in this project are React, R
 <br/>
 
 - SearchExercises => Called fetchData() and exercisesOptions, and then passed the parameter `url` in the former. Then continued implementing `handleSearch()`. After that, declared new useEffect to fetch `categories` as soon as the page reloads.
+
+- Create new component `HorizontalScrollbar` to show all the `categories` inside.
+
+
