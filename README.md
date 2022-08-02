@@ -76,4 +76,6 @@ At the end of the day, the technologies implemented in this project are React, R
 
 - Create new component `HorizontalScrollbar` to show all the `categories` inside.
 
+- HorizontalScrollbar implemented together with `BodyPart` component. ScrollMenu integrated.
+
 
