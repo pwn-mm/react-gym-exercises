@@ -4,11 +4,22 @@ import { Box } from "@mui/material";
 import { HeroBanner, SearchExercises, Exercises } from "../components";
 
 const Home = () => {
+  // changes are going to be reflected all across our application that's why we set these state in the Home page
+  const [bodyPart, setBodyPart] = useState("all");
+  const [exercises, setExercises] = useState([]);
   return (
     <Box>
       <HeroBanner />
-      <SearchExercises />
-      <Exercises />
+      <SearchExercises
+        bodyPart={bodyPart}
+        setBodyPart={setBodyPart}
+        setExercises={setExercises}
+      />
+      <Exercises
+        bodyPart={bodyPart}
+        setBodyPart={setBodyPart}
+        setExercises={setExercises}
+      />
     </Box>
   );
 };

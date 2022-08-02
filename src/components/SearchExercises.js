@@ -3,10 +3,9 @@ import { Box, Button, Stack, TextField, Typography } from "@mui/material";
 import { exerciseOptions, fetchData } from "../utils/fetchData";
 import HorizontalScrollbar from "./HorizontalScrollbar";
 
-const SearchExercises = () => {
+const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
   // To search exercises
   const [search, setSearch] = useState("");
-  const [exercises, setExercises] = useState([]);
   const [bodyParts, setBodyParts] = useState([]);
 
   // Only calls when the page reloads
@@ -17,6 +16,7 @@ const SearchExercises = () => {
         exerciseOptions
       );
       setBodyParts(["all", ...bodyPartsData]);
+      console.log(bodyParts);
     };
 
     fetchExercisesData();
@@ -28,7 +28,7 @@ const SearchExercises = () => {
         "https://exercisedb.p.rapidapi.com/exercises",
         exerciseOptions
       );
-      console.log(exercisesData);
+      // console.log(exercisesData);
 
       const searchedExercises = exercisesData.filter(
         (exercise) =>
@@ -87,7 +87,11 @@ const SearchExercises = () => {
 
       {/* For Categories */}
       <Box sx={{ position: "relative", width: "100%", p: "20px" }}>
-        <HorizontalScrollbar data={bodyParts} />
+        <HorizontalScrollbar
+          data={bodyParts}
+          bodyPart={bodyPart}
+          setBodyPart={setBodyPart}
+        />
       </Box>
     </Stack>
   );
