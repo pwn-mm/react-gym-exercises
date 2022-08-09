@@ -63,19 +63,23 @@ At the end of the day, the technologies implemented in this project are React, R
 - Home Page => We will be using many other components inside `Home`| Implemented `HeroBanner`, `SearchExercises`, and `Exercises` components.
 <br/>
 
-- HeroBanner => Integrated `typography`, `button` and `banner image` alongside inline css styles.
+- `HeroBanner` => Integrated `typography`, `button` and `banner image` alongside inline css styles.
 <br/>
 
-- SearchExercises => Integrated `textField`, `typography` and `button` | async function handleSearch() => created FetchData() in the `utils` folder.
+- `SearchExercises` => Integrated `textField`, `typography` and `button` | async function handleSearch() => created FetchData() in the `utils` folder.
 <br/>
 
 - FetchData() => Parameters (url, options), fetched the response, converted the response into json | subscribe ExercisesDB API from RapidAPI and stored the key in `.env`.
 <br/>
 
-- SearchExercises => Called fetchData() and exercisesOptions, and then passed the parameter `url` in the former. Then continued implementing `handleSearch()`. After that, declared new useEffect to fetch `categories` as soon as the page reloads.
+- `SearchExercises` => Called fetchData() and exercisesOptions, and then passed the parameter `url` in the former. Then continued implementing `handleSearch()`. After that, declared new useEffect to fetch `categories` as soon as the page reloads.
 
-- Create new component `HorizontalScrollbar` to show all the `categories` inside.
+- Created new component `HorizontalScrollbar` to show all the categories inside.
 
-- HorizontalScrollbar implemented together with `BodyPart` component. ScrollMenu integrated.
+- `HorizontalScrollbar` implemented together with `BodyPart` component. ScrollMenu integrated.
+
+- `ExerciseComponent` => `ExerciseCardComponent` done.
+
+- `ExerciseComponent` => `Pagination integrated`, currentPage state, 
 
 
