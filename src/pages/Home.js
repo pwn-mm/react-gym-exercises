@@ -7,6 +7,8 @@ const Home = () => {
   // changes are going to be reflected all across our application that's why we set these state in the Home page
   const [bodyPart, setBodyPart] = useState("all");
   const [exercises, setExercises] = useState([]);
+
+  console.log(bodyPart);
   return (
     <Box>
       <HeroBanner />

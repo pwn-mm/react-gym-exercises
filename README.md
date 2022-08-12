@@ -80,6 +80,8 @@ At the end of the day, the technologies implemented in this project are React, R
 
 - `ExerciseComponent` => `ExerciseCardComponent` done.
 
-- `ExerciseComponent` => `Pagination integrated`, currentPage state | `CurrentExercises function integrated`
+- `ExerciseComponent` => `Pagination` integrated, currentPage state | `CurrentExercises function` integrated | `ExerciseComponent` done
+
+-
 
 
