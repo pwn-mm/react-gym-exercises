@@ -14,6 +14,7 @@ const ExerciseDetail = () => {
   const { id } = useParams();
 
   // fetch data
+  // code reviewed
   useEffect(() => {
     const fetchExercisesData = async () => {
       const exerciseDbUrl = "https://exercisedb.p.rapidapi.com";
