@@ -48,29 +48,29 @@ At the end of the day, the technologies implemented in this project are React, R
 
 - \*\*\* Need `REACT_APP` Prefix in .env File
 
-## Resources 
+## Resources
 
 - https://stackoverflow.com/questions/70100830/why-do-we-need-react-app-prefix-in-env-file-for-react-development
 
 ## Project steps
 
 - Routes from rrd and Box from mui integrate in App.js. Added `Navbar` and `Footer` components in the components folder and added `Home` and `ExercisesDetail` components in the pages since these contain more components inside them. Wrap `App` with `BrowserRouter` in index.js.
-<br/>
+  <br/>
 
 - Navbar Component => Logo, Exercises routes added | Inline css styles integrated.
-<br/>
+  <br/>
 
 - Home Page => We will be using many other components inside `Home`| Implemented `HeroBanner`, `SearchExercises`, and `Exercises` components.
-<br/>
+  <br/>
 
 - `HeroBanner` => Integrated `typography`, `button` and `banner image` alongside inline css styles.
-<br/>
+  <br/>
 
 - `SearchExercises` => Integrated `textField`, `typography` and `button` | async function handleSearch() => created FetchData() in the `utils` folder.
-<br/>
+  <br/>
 
 - FetchData() => Parameters (url, options), fetched the response, converted the response into json | subscribe ExercisesDB API from RapidAPI and stored the key in `.env`.
-<br/>
+  <br/>
 
 - `SearchExercises` => Called fetchData() and exercisesOptions, and then passed the parameter `url` in the former. Then continued implementing `handleSearch()`. After that, declared new useEffect to fetch `categories` as soon as the page reloads.
 
@@ -82,7 +82,6 @@ At the end of the day, the technologies implemented in this project are React, R
 
 - `ExerciseComponent` => `Pagination` integrated, currentPage state | `CurrentExercises function` integrated | `ExerciseComponent` done
 
-- `ExerciseDetail` =>   `useState` and `useEffect` integrated | set ExerciseDetailData
+- `ExerciseDetail` => `useState` and `useEffect` integrated | set ExerciseDetailData
 
-
-
+- `Detail Component` => fetchData | init basic layout
