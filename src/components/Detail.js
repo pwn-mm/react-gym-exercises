@@ -7,7 +7,7 @@ import EquipmentImage from "../assets/icons/equipment.png";
 
 const Detail = ({ exerciseDetail }) => {
   const { bodyPart, gifUrl, name, target, equipment } = exerciseDetail;
-  // code reviewed
+  // code reviewed 2.0
 
   return (
     <Stack
