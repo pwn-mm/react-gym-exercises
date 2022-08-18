@@ -84,4 +84,6 @@ At the end of the day, the technologies implemented in this project are React, R
 
 - `ExerciseDetail` => `useState` and `useEffect` integrated | set ExerciseDetailData
 
-- `Detail Component` => fetchData | init basic layout
+- `Detail Component` => fetchData | init basic layout | finished main layout
+
+- Integrate new api call function in `fetchData` for youtube search and download. Integrate this function in `ExerciseDetail Component`.
