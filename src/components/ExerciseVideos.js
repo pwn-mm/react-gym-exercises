@@ -1,7 +1,7 @@
 import React from 'react'
 
 const ExerciseVideos = () => {
-  // project review
+  // code review
   return (
     <div>ExerciseVideos</div>
   )
