@@ -14,16 +14,26 @@ const ExerciseDetail = () => {
 
   // set youtube search and download videos from api call
   const [exerciseVideos, setExerciseVideos] = useState([]);
+
+  // set target muscle exercise data from api call
+  const [targetMuscleExercises, setTargetMuscleExercises] = useState([]);
+
+  // set equipment exercise data from api call
+  const [equipmentExercises, setEquipmentExercises] = useState([]);
+
+
   // id of the exercise -> access to the number that we are on the url
   const { id } = useParams();
 
   // fetch data
   useEffect(() => {
+
     const fetchExercisesData = async () => {
       const exerciseDbUrl = "https://exercisedb.p.rapidapi.com";
       const youtubeSearchUrl =
         "https://youtube-search-and-download.p.rapidapi.com";
 
+      // api call for exercise details
       const exerciseDetailData = await fetchData(
         `${exerciseDbUrl}/exercises/exercise/${id}`,
         exerciseOptions
@@ -32,10 +42,25 @@ const ExerciseDetail = () => {
 
       // api call for youtube search and download
       const exerciseVideosData = await fetchData(
-        `${youtubeSearchUrl}/search?q=${exerciseDetail.name}`,
+        `${youtubeSearchUrl}/search?query=${exerciseDetailData.name}`,
         youtubeOptions
       );
-      setExerciseVideos(exerciseVideosData);
+      setExerciseVideos(exerciseVideosData.contents);
+
+      // api call for target muscle exercise data
+      const targetMuscleExercisesData = await fetchData(
+        `${exerciseDbUrl}/exercises/target/${exerciseDetailData.target}`,
+        exerciseOptions
+      );
+      setTargetMuscleExercises(targetMuscleExercisesData);
+
+      // api call for equipment muscle exercise data
+      const equipmentExercisesData = await fetchData(
+        `${exerciseDbUrl}/exercises/equipment/${exerciseDetailData.equipment}`,
+        exerciseOptions
+      );
+      setEquipmentExercises(equipmentExercisesData);
+
     };
     fetchExercisesData();
   }, [id]);
@@ -47,7 +72,7 @@ const ExerciseDetail = () => {
         exerciseVideos={exerciseVideos}
         name={exerciseDetail.name}
       />
-      <SimilarExercises />
+      <SimilarExercises targetMuscleExercises={targetMuscleExercises} equipmentExercises={equipmentExercises} />
     </Box>
   );
 };
