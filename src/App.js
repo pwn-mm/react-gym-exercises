@@ -7,7 +7,7 @@ import { Navbar, Footer } from "./components";
 import { Home, ExerciseDetail } from "./pages";
 
 const App = () => {
-  // project reviewed
+  // project reviewed today
   return (
     <Box width="400px" sx={{ width: { xl: "1488px" } }} m="auto">
       <Navbar />
